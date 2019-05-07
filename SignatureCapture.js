@@ -29,6 +29,7 @@ class SignatureCapture extends React.Component {
             this.props.onSaveEvent({
                 pathName: event.nativeEvent.pathName,
                 encoded: event.nativeEvent.encoded,
+				imageId: event.nativeEvent.imageId,
             });
         }
 
@@ -97,7 +98,9 @@ SignatureCapture.propTypes = {
     showBorder: PropTypes.bool,
     showNativeButtons: PropTypes.bool,
     showTitleLabel: PropTypes.bool,
-    maxSize:PropTypes.number
+    maxSize:PropTypes.number,
+	savePath: PropTypes.string,
+	imageId: PropTypes.string,
 };
 
 var RSSignatureView = requireNativeComponent('RSSignatureView', SignatureCapture, {

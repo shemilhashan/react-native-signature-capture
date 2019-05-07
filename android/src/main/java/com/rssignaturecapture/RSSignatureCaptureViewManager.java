@@ -1,5 +1,6 @@
 package com.rssignaturecapture;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.facebook.infer.annotation.Assertions;
@@ -21,14 +22,17 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 	public static final String PROPS_VIEW_MODE = "viewMode";
 	public static final String PROPS_SHOW_NATIVE_BUTTONS="showNativeButtons";
 	public static final String PROPS_MAX_SIZE="maxSize";
-
+	public static final String PROPS_IMAGE_SAVE_PATH="savePath";
+	public static final String PROPS_IMAGE_ID="imageId";
 	public static final int COMMAND_SAVE_IMAGE = 1;
 	public static final int COMMAND_RESET_IMAGE = 2;
+	public Context reactContext = null;
 
 	private RSSignatureCaptureContextModule mContextModule;
 
 	public RSSignatureCaptureViewManager(ReactApplicationContext reactContext) {
 		mContextModule = new RSSignatureCaptureContextModule(reactContext);
+		this.reactContext = reactContext;
 	}
 
 	@Override
@@ -69,6 +73,27 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 			view.setMaxSize(maxSize);
 		}
 	}
+
+	@ReactProp(name = PROPS_IMAGE_SAVE_PATH)
+	public void setSavePath(RSSignatureCaptureMainView view, @Nullable String savePath) {
+		Log.d("setSavePath:",  ""+savePath);
+		if(view!=null){
+			if(savePath.equals("temp")){
+				savePath = this.reactContext.getCacheDir().getAbsolutePath();
+			}
+
+			view.setSavePath(savePath);
+		}
+	}
+
+	@ReactProp(name = PROPS_IMAGE_ID)
+	public void setImageId(RSSignatureCaptureMainView view, @Nullable String imageId) {
+		Log.d("setImageId:",  ""+imageId);
+		if(view!=null){
+			view.setImageId(imageId);
+		}
+	}
+
 
 
 	@Override

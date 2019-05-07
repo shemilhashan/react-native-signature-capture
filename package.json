@@ -1,31 +1,96 @@
 {
-  "name": "react-native-signature-capture",
-  "version": "0.4.9",
+  "_args": [
+    [
+      {
+        "raw": "react-native-signature-capture",
+        "scope": null,
+        "escapedName": "react-native-signature-capture",
+        "name": "react-native-signature-capture",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\dapp"
+    ]
+  ],
+  "_from": "react-native-signature-capture@latest",
+  "_id": "react-native-signature-capture@0.4.9",
+  "_inCache": true,
+  "_location": "/react-native-signature-capture",
+  "_nodeVersion": "6.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-signature-capture-0.4.9.tgz_1508150617424_0.7647406689357013"
+  },
+  "_npmUser": {
+    "name": "jedt",
+    "email": "jed.tiotuico@icloud.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-signature-capture",
+    "scope": null,
+    "escapedName": "react-native-signature-capture",
+    "name": "react-native-signature-capture",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-signature-capture/-/react-native-signature-capture-0.4.9.tgz",
+  "_shasum": "c581cedef6cea42beea40d0f7d210173196b9d4a",
+  "_shrinkwrap": null,
+  "_spec": "react-native-signature-capture",
+  "_where": "E:\\dapp",
+  "author": {
+    "name": "RepairShopr"
+  },
+  "bugs": {
+    "url": "https://github.com/RepairShopr/react-native-signature-capture/issues"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
   "description": "Lets users sign their signatures",
-  "main": "SignatureCapture.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-N1O6f+IZPeNRePA00HvR3IERGHof5s1Y878SZZV69yEUZfT6rM9NoO9DAHbNiqZWIawHew1sCcY0R7dAN6BrjA==",
+    "shasum": "c581cedef6cea42beea40d0f7d210173196b9d4a",
+    "tarball": "https://registry.npmjs.org/react-native-signature-capture/-/react-native-signature-capture-0.4.9.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RepairShopr/react-native-signature-capture.git"
-  },
+  "gitHead": "811a4e11dcb72267085a2dcd78e3ce316ccacd6a",
+  "homepage": "https://github.com/RepairShopr/react-native-signature-capture#readme",
   "keywords": [
     "react-component",
     "react-native",
     "ios",
     "signature"
   ],
+  "license": "ISC",
+  "main": "SignatureCapture.js",
+  "maintainers": [
+    {
+      "name": "jedt",
+      "email": "jed.tiotuico@icloud.com"
+    }
+  ],
+  "name": "react-native-signature-capture",
+  "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.47"
   },
-  "author": "RepairShopr",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RepairShopr/react-native-signature-capture/issues"
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RepairShopr/react-native-signature-capture.git"
   },
-  "homepage": "https://github.com/RepairShopr/react-native-signature-capture#readme",
-  "dependencies": {
-    "prop-types": "^15.5.10"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.9"
 }
