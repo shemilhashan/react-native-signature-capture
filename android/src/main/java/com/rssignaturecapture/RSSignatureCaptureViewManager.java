@@ -79,7 +79,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 		Log.d("setSavePath:",  ""+savePath);
 		if(view!=null){
 			if(savePath.equals("temp")){
-				savePath = this.reactContext.getCacheDir().getAbsolutePath();
+				savePath = this.reactContext.getFilesDir().getAbsolutePath();
 			}
 
 			view.setSavePath(savePath);
